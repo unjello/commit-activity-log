@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/ktrysmt/go-bitbucket"
 	"golang.org/x/crypto/ssh/terminal"
 )
 
@@ -16,5 +17,5 @@ func List() {
 	}
 	fmt.Println(string(pw))
 
-	//c := bitbucket.NewBasicAuth("sg0224609", string(pw))
+	bitbucket.NewBasicAuth("sg0224609", string(pw))
 }
