@@ -1,5 +1,8 @@
 package command
 
+import "github.com/unjello/commit-activity-log/config"
+
 func Execute() {
-	List();
+	config.Load()
+	List()
 }
